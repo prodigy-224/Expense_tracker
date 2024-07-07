@@ -1,6 +1,5 @@
-add_expense.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
@@ -10,85 +9,90 @@ add_expense.html
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" href="images/beam.jpeg" type="image/x-icon">
     </head>
-    <header>
-        <h1> <span style="font-size: 1.3em;">C</span>ASH<span style="font-size: 1.3em;">C</span>LARITY</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Log In</a>
-            <a href="view_expense.html">View expenses</a>
-            <a href="add_expense.html">Add an expense</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Record New Expenses</h2>
-        <p></p>
-
-        <form class="info">
-            <div class="form_group">
-                <label for="exp_name">Expense Name</label>
-                <input type="text" name="exp_name" id="exp_name" placeholder="i.e rent ,coffee, tomatoes.....">
+    <body>
+        
+        <header class="navBar">
+            <h1> <span style="font-size: 1.3em;">C</span>ASH<span style="font-size: 1.3em;">C</span>LARITY</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Log In</a>
+                <a href="view_expense.html">View expenses</a>
+                <a href="add_expense.html">Add an expense</a>
+            </nav>
+        </header>
+    
+        <main>
+            <h2>Record New Expenses</h2>
+            <p></p>
+    
+            <form class="info">
+                <div class="form_group">
+                    <label for="exp_name">Expense Name</label>
+                    <input type="text" name="exp_name" id="exp_name" placeholder="i.e rent ,coffee, tomatoes.....">
+                </div>
+    
+                <div class="form_group">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount">
+                </div>
+    
+                <div class="form_group">
+                    <label for="exp_category">Expense Category</label>
+                    <select name="exp_category" id="exp_category">
+                        <option value="">Select a category</option>
+                        <option value="food">Food</option>
+                        <option value="bills">Bills</option>
+                        <option value="entertainment">Entertainment</option>
+                    </select>
+                </div>
+    
+                <div class="form_group">
+                    <label for="pay_mode">Payment Mode</label>
+                    <select name="pay_mode" id="pay_mode">
+                        <option value="">select payment method</option>
+                        <option value="cash">Cash</option>
+                        <option value="mpesa">Mpesa</option>
+                        <option value="credit card">Credit Card</option>
+    
+                    </select>
+    
+                </div>
+    
+                <div class="form_group">
+                    <label for="time">Time & Date</label>
+                    <input type="datetime-local" name="time" id="time">
+                </div>
+    
+                <div class="form_group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" placeholder="A brief description about the expense."></textarea>
+                </div>
+    
+    
+                <div class="">
+                    <input type="submit" name="sub" id="sub" value="ADD">
+                </div>
+    
+            </form>  <br> <br>
+    
+    
+            <a href="view_expense.html" class="log">View Expenses</a> <br>  <br> <br>
+            <a href="edit_expense.html" class="log">Edit Expenses</a>
+        </main>
+    
+        <footer>
+            <p>Contact us via:</p>
+            <div class="socials">
+                <a href="https://www.instagram.com" target="_blank"> <img src="images/insta.jpeg.jpg" alt="instagram" class="social_icon"></a>
+                <a href="https://www.tiktok.com" target="_blank"> <img src="images/tiktok.png.jpg" alt="Tiktok" class="social_icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"> <img src="images/link.png.jpg" alt="Linkedin" class="social_icon"></a>
+                <a href="https://www.x.com" target="_blank"> <img src="images/x.png.jpg" alt="X" class="social_icon"></a>
+                <a href="https://www.facebook.com" target="_blank"> <img src="images/face.png" alt="Facebook" class="social_icon"></a>
             </div>
-
-            <div class="form_group">
-                <label for="amount">Amount</label>
-                <input type="number" name="amount" id="amount">
-            </div>
-
-            <div class="form_group">
-                <label for="exp_category">Expense Category</label>
-                <select name="exp_category" id="exp_category">
-                    <option value="">Select a category</option>
-                    <option value="food">Food</option>
-                    <option value="bills">Bills</option>
-                    <option value="entertainment">Entertainment</option>
-                </select>
-            </div>
-
-            <div class="form_group">
-                <label for="pay_mode">Payment Mode</label>
-                <select name="pay_mode" id="pay_mode">
-                    <option value="">select payment method</option>
-                    <option value="cash">Cash</option>
-                    <option value="mpesa">Mpesa</option>
-                    <option value="credit card">Credit Card</option>
-
-                </select>
-
-            </div>
-
-            <div class="form_group">
-                <label for="time">Time & Date</label>
-                <input type="datetime-local" name="time" id="time">
-            </div>
-
-            <div class="form_group">
-                <label for="description">Description</label>
-                <textarea name="description" id="description" placeholder="A brief description about the expense."></textarea>
-            </div>
-
-
-            <div class="">
-                <input type="submit" name="sub" id="sub" value="ADD">
-            </div>
-
-        </form>  <br> <br>
-
-
-        <a href="view_expense.html" class="log">View Expenses</a> <br>  <br> <br>
-        <a href="edit_expense.html" class="log">Edit Expenses</a>
-    </main>
-
-    <footer>
-        <p>Contact us via:</p>
-            <a href="https://www.instagram.com" target="_blank"> <img src="images/insta.jpeg.jpg" alt="instagram" class="social_icon"></a>
-            <a href="https://www.tiktok.com" target="_blank"> <img src="images/tiktok.png.jpg" alt="Tiktok" class="social_icon"></a>
-            <a href="https://www.linkedin.com" target="_blank"> <img src="images/link.png.jpg" alt="Linkedin" class="social_icon"></a>
-            <a href="https://www.x.com" target="_blank"> <img src="images/x.png.jpg" alt="X" class="social_icon"></a>
-            <a href="https://www.facebook.com" target="_blank"> <img src="images/face.png.jpg" alt="Facebook" class="social_icon"></a>
             <p> &gt;&gt;&gt;&copy;Copyright 2024 CashClarity,  All rights reserved.&lt;&lt;&lt;  </p>
         </footer>
+   
     </body>
 
 </html>
